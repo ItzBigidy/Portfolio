@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    font-size: x-large;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    
+}
+
+#link {
+    margin-left: 4px;
+}
+
+
