@@ -24,7 +24,7 @@ a {
     margin-top: 35px;
     margin-left: 35px;
     min-width: 100px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
 }
 
 /* NAVIGATION LINKS SECTION */
@@ -34,10 +34,11 @@ main {
 }
 nav {
     float: left;
-    width: 330px;
-    height: 100vh;
-    border: 2px solid;
+    width: 300px;
+    height: fit-content;
+    border: 1px solid;
     border-style: none solid none none;
+    
 }
 
 #link {
@@ -51,34 +52,50 @@ nav {
     filter: blur(1.5px);
 }
 
-
-
-/* WORK NAV BOXES */
-.box {
+/* about Info box */
+.infoBox {
     display: flex;
-    position: relative;
-    width: 70%;
+    flex-direction: column;
+    align-items: center; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
-/* ABOUT INFO BOX */
 .info {
     text-align: left;
-    margin-top: 6px;
-    margin-left: 2em;
+    margin: 5px 30px;
 }
 
-/* navWORK section */
+/* Contact section */
+#contactSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    
+}
+#contactSection h2 {
+    font-weight: normal;
+    text-align: left;
+    padding: 0px 40px 30px;
+    margin-top: 0;
+}
+
+#contactLink:hover {
+    filter: blur(1.5px);
+}
+
+/* WORK section */
 .workarea {
-    width: 80%;
+    width: 70%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: auto;
 }
 
 /* first work title */
 .firstworkbox {
-    position: relative;
     width: 100%;
     height: auto;
 }
@@ -140,18 +157,21 @@ nav {
     background-color: black; 
 }
 
-/* Contact section */
+/* Resume Section */
 
-#contactSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    width: 100%;
+#resumeDown {
+    margin: 8px 0px 0px 30px
 }
 
+#resumeButton {
+    border: 2px whitesmoke solid;
+    padding: 3px 10px;
+    border-radius: 8px;
+}
 
-/* media queries */
+/* MEDIA QUERIES */
 
+/* Header Querie */
 @media screen and (max-width: 768px) {
     #name {
         text-align: center;
@@ -167,6 +187,7 @@ nav {
     }
 }
 
+/* Navigation Link Section */
 @media screen and (max-width:768px) {
     nav {
         float: none;
@@ -187,6 +208,7 @@ nav {
     }
 }
 
+/* Main section Querie */
 @media screen and (max-width:768px) {
     main {
         display: block;
@@ -194,19 +216,77 @@ nav {
     }
 }
 
+/* about queries */
 @media screen and (max-width:768px) {
+    .infoBox {
+        margin-top: 0px;
+        padding: 40px;
+        width: auto;
+    }
     .info {
         text-align: center;
-        width: 450px;
         margin: auto;
         line-height: 3em;
     }
 }
 
+@media screen and (max-width:375px) {
+    .infoBox {
+        padding: 20px;
+    }
+}
+
+/* contact queries */
 @media screen and (max-width:768px) {
-    .box {
-        margin-top: 10px;
-        padding: 40px;
-        width: auto;
+    #contactSection {
+        margin-top: 50px;
+        font-size: .85em;
+    }
+    #contactSection h2 {
+        text-align: center;
+        padding: 15px;
+    }
+}
+@media screen and (max-width:375px) {
+    #contactSection {
+        font-size: .7em;
+    }
+    #contactSection h2 {
+        padding: 10px;
+    }
+}
+
+/* work queries */
+@media screen and (max-width:768px) {
+    .workarea {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:425px) {
+    .workarea {
+        width: 100%;
+    }
+    .firstworkbox h2 {
+        font-size: 1.2em;
+    }
+    .projecttitle1 {
+        font-size: .9em;
+    }
+    .workbox h2 {
+        font-size: 1.2em;
+    }
+    .projecttitle {
+        font-size: .9em;
+    }
+    .workbox {
+        width: fit-content;
+    }
+}
+
+/* resume queries */
+
+@media screen and (max-width: 768px) {
+    #resumeDown {
+        margin: 40px;
     }
 }
