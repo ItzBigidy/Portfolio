@@ -1,3 +1,6 @@
+
+/* CSS STYLING FOR MAIN PAGE */
+
 * {
     box-sizing: border-box;
     color: whitesmoke;
@@ -28,10 +31,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.nav {
-    
 }
 
 #link {
