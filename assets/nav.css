@@ -1,63 +1,75 @@
+/* General Rules */
 * {
     box-sizing: border-box;
-    background-color: black;
     color: whitesmoke;
-   text-align: center;
-}
-
-
-
-body {
-    font-family: 'Courier New', Courier, monospace;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     
 }
 
-#name {
-    text-align: left;
-    margin-left: 20px;
-    min-width: 100px;
-    padding-bottom: 40px;
-
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(black, rgb(38, 38, 36));
 }
 
+a {
+    text-decoration: none;
+}
+
+/* HEADER SECTION */
+#name {
+    text-align: left;
+    margin-top: 35px;
+    margin-left: 35px;
+    min-width: 100px;
+    padding-bottom: 40px;
+}
+
+/* NAVIGATION LINKS SECTION */
 nav {
     float: left;
     width: 330px;
-    height: 100%;
-    border: 2px white solid;
+    height: 100vh;
+    border: 2px solid;
     border-style: none solid none none;
 }
 
-.link {
+#link {
     display: block;
     text-align: right;
     margin: 3px 30px 2em;
     padding: 3px;
+    font-size: 20px;
+}
+#link:hover{
+    filter: blur(1.5px);
 }
 
 main {
     display: flex;
 }
 
+/* WORK NAV BOXES */
 .box {
     display: flex;
     position: relative;
     width: 70%;
 }
 
+/* ABOUT INFO BOX */
 .info {
     text-align: left;
     margin-top: 6px;
     margin-left: 2em;
 }
 
-.box {
+.aboutbox {
     display: block;
 }
 
+/* navWORK section */
 .workarea {
     width: 80%;
     height: auto;
@@ -66,19 +78,11 @@ main {
     margin: 10px;
 }
 
+/* first work title */
 .firstworkbox {
     position: relative;
     width: 100%;
     height: auto;
-}
-
-.projecttitle {
-    position: relative;
-    bottom: 45%;
-    padding: 5px;
-    margin: auto;
-    width: 92%;
-   
 }
 
 #firstworkimg {
@@ -86,22 +90,28 @@ main {
     height: auto;
     object-fit: cover;
     background-image: url("../assets/images/Gorillaz1.webp");
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
-
 #firstworkimg:hover {
     filter: none;
     border: 4px rgb(103, 100, 100) solid;
 }
-
-
 #firstworkimg:focus {
     filter: none;
     filter: brightness(65%);
     border: 4px rgb(103, 100, 100) solid;
 }
 
+.projecttitle1 {
+    position: relative;
+    bottom: 45%;
+    margin: auto;
+    width: 91%;
+    background-color: black; 
+}
+
+/* rest of work titles */
 .workbox {
     width: 50%;
     height: auto;
@@ -110,17 +120,24 @@ main {
 #workimg {
     width: 81%;
     height: auto;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 
 #workimg:hover {
     filter: none;
     border: 4px rgb(103, 100, 100) solid;
 }
-
 #workimg:focus {
     filter: none;
     filter: brightness(65%);
     border: 4px rgb(103, 100, 100) solid;
+}
+
+.projecttitle {
+    position: relative;
+    bottom: 45%;
+    margin: auto;
+    width: 82%;
+    background-color: black; 
 }

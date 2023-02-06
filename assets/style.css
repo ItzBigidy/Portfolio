@@ -1,13 +1,24 @@
 * {
     box-sizing: border-box;
-    background-color: black;
     color: whitesmoke;
     text-align: center;
 }
 
+body {
+    background-image: linear-gradient(black, rgb(38, 38, 36));
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    filter: blur(1.5px);
+}
+
 header {
     text-align: center;
-    font-size: x-large;
+    font-size: 1.5em;
 }
 
 body {
@@ -24,7 +35,7 @@ body {
 }
 
 #link {
-    margin-left: 4px;
+    margin-left: 10px;
 }
 
 
