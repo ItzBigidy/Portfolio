@@ -1,9 +1,10 @@
-/* General Rules */
+/* CSS STYLING FOR NAVAIGATION PAGES*/
+
+/* General Rules */ 
 * {
     box-sizing: border-box;
     color: whitesmoke;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 body {
@@ -32,6 +33,7 @@ main {
     height: 100%;
     display: flex;
 }
+
 nav {
     float: left;
     width: 300px;
@@ -48,18 +50,17 @@ nav {
     padding: 3px;
     font-size: 20px;
 }
+
 #link:hover{
     filter: blur(1.5px);
 }
 
-/* about Info box */
+/* ABOUT PAGE */
 .infoBox {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    width: 75%;
 }
 
 .info {
@@ -67,13 +68,14 @@ nav {
     margin: 5px 30px;
 }
 
-/* Contact section */
+/* CONTACT PAGE */
 #contactSection {
     display: flex;
     flex-direction: column;
     margin-top: 0px;
     
 }
+
 #contactSection h2 {
     font-weight: normal;
     text-align: left;
@@ -85,7 +87,7 @@ nav {
     filter: blur(1.5px);
 }
 
-/* WORK section */
+/* WORK PAGE */
 .workarea {
     width: 70%;
     height: auto;
@@ -157,7 +159,7 @@ nav {
     background-color: black; 
 }
 
-/* Resume Section */
+/* RESUME PAGE */
 
 #resumeDown {
     margin: 8px 0px 0px 30px
@@ -171,7 +173,7 @@ nav {
 
 /* MEDIA QUERIES */
 
-/* Header Querie */
+/* Header */
 @media screen and (max-width: 768px) {
     #name {
         text-align: center;
@@ -187,7 +189,7 @@ nav {
     }
 }
 
-/* Navigation Link Section */
+/* Navigation Links */
 @media screen and (max-width:768px) {
     nav {
         float: none;
@@ -208,7 +210,7 @@ nav {
     }
 }
 
-/* Main section Querie */
+/* Main section */
 @media screen and (max-width:768px) {
     main {
         display: block;
@@ -216,7 +218,7 @@ nav {
     }
 }
 
-/* about queries */
+/* About Page */
 @media screen and (max-width:768px) {
     .infoBox {
         margin-top: 0px;
@@ -236,7 +238,7 @@ nav {
     }
 }
 
-/* contact queries */
+/* Contact Page */
 @media screen and (max-width:768px) {
     #contactSection {
         margin-top: 50px;
@@ -256,7 +258,7 @@ nav {
     }
 }
 
-/* work queries */
+/* Work Page */
 @media screen and (max-width:768px) {
     .workarea {
         margin-top: 30px;
@@ -283,8 +285,7 @@ nav {
     }
 }
 
-/* resume queries */
-
+/* Resume Page */
 @media screen and (max-width: 768px) {
     #resumeDown {
         margin: 40px;
