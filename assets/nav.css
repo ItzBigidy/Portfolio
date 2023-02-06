@@ -51,7 +51,7 @@ nav {
     font-size: 20px;
 }
 
-#link:hover{
+#link:hover {
     filter: blur(1.5px);
 }
 
@@ -291,3 +291,4 @@ nav {
         margin: 40px;
     }
 }
+
