@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(black, rgb(38, 38, 36));
@@ -28,6 +28,10 @@ a {
 }
 
 /* NAVIGATION LINKS SECTION */
+main {
+    height: 100%;
+    display: flex;
+}
 nav {
     float: left;
     width: 330px;
@@ -47,9 +51,7 @@ nav {
     filter: blur(1.5px);
 }
 
-main {
-    display: flex;
-}
+
 
 /* WORK NAV BOXES */
 .box {
@@ -63,10 +65,6 @@ main {
     text-align: left;
     margin-top: 6px;
     margin-left: 2em;
-}
-
-.aboutbox {
-    display: block;
 }
 
 /* navWORK section */
@@ -140,4 +138,75 @@ main {
     margin: auto;
     width: 82%;
     background-color: black; 
+}
+
+/* Contact section */
+
+#contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+    #name {
+        text-align: center;
+        margin: 35px;
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 365px) {
+    #name {
+        text-align: center;
+        margin: 20px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        float: none;
+        width: auto;
+        height: fit-content;
+        border: 2px solid whitesmoke;
+        border-left: none;
+        border-right: none;
+    
+    }
+}
+
+@media screen and (max-width:768px) {
+    #link {
+        margin: 40px;
+        padding: 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    main {
+        display: block;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .info {
+        text-align: center;
+        width: 450px;
+        margin: auto;
+        line-height: 3em;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .box {
+        margin-top: 10px;
+        padding: 40px;
+        width: auto;
+    }
 }
